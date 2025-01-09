@@ -2,14 +2,28 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Cat cat = new Cat("Kitty");
+        cat.run(201);
+        cat.sweem(5);
+        System.out.println();
+        Dog dog = new Dog("Trezor");
+        Dog dog2 = new Dog("Tuzik");
+        dog.run(501);
+        dog.sweem(11);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println();
+        Cat catArr[] = new Cat[7];
+        for (int i =0; i<catArr.length; i++) {
+            catArr[i] = new Cat("Tom");
+            catArr[i].isSatiety(); // проверка на сытость до кормления
+            catArr[i].catEat();
+            catArr[i].isSatiety(); // проверка на сытость после кормления
         }
-    }
+
+        System.out.println();
+        System.out.println("Котов создано: " + cat.getCountCat());
+        System.out.println("Собак созданно: " + dog.getCountDog());
+        System.out.println("Всего создано животных: " + (dog.getCountDog()+cat.getCountCat()));
+        }
+
 }
