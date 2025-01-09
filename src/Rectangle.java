@@ -1,10 +1,11 @@
 import static java.lang.Math.pow;
 
-public class Rectangle {
+public class Rectangle implements Task2 {
     public static String fillColor = "Blue";
     public static String borderColor = "Black";
     public static double sideA = 10;
     public static double sideB = 5;
+
     public Rectangle(){};
 
     public String fillColor() {
@@ -16,7 +17,7 @@ public class Rectangle {
     }
 
     public double perimeter() {
-        double perimeterRectangle=2*(sideA*sideB);
+        double perimeterRectangle=2*(sideA+sideB);
         return perimeterRectangle;
     }
 

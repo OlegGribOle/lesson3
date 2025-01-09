@@ -1,4 +1,4 @@
-public class Triangle {
+public class Triangle implements Task2 {
     public static String fillColor = "Brown";
     public static String borderColor = "Gray";
     public static double sideA = 3;

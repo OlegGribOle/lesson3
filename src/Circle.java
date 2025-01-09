@@ -1,10 +1,12 @@
 import static java.lang.Math.pow;
 
-public class Circle {
+public class Circle implements Task2{
     public static String fillColor = "Green";
     public static String borderColor = "Red";
     public static double radius = 10;
-    public Circle(){};
+    public Circle(){
+
+    };
 
     public String fillColor() {
         return fillColor;

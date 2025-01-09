@@ -28,11 +28,18 @@ public class Main {
         System.out.println();
 
         Circle circle = new Circle();
+        System.out.println("Круг");
         System.out.println("Периметр: " + circle.perimeter() + " Площадь: " + circle.area() +
                " Цвет фона: " + circle.fillColor() + " Цвет границ: " + circle.borderColor());
+        System.out.println();
+
+        System.out.println("Прямоугольник");
         Rectangle rectangle = new Rectangle();
         System.out.println("Периметр: " + rectangle.perimeter() + " Площадь: " + rectangle.area() +
                 " Цвет фона: " + rectangle.fillColor() + " Цвет границ: " + rectangle.borderColor());
+        System.out.println();
+
+        System.out.println("Треугольник");
         Triangle triangle = new Triangle();
         System.out.println("Периметр: " + triangle.perimeter() + " Площадь: " + triangle.area() +
                 " Цвет фона: " + triangle.fillColor() + " Цвет границ: " + triangle.borderColor());
