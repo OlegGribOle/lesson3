@@ -25,7 +25,7 @@ public class Cat extends Animal{
     }
 // Кот плавает
     @Override
-    public void sweem(int distance) {
+    public void swim(int distance) {
         System.out.println("Кот не умеет плавать");
     }
 // Возвращает количество созданых котов

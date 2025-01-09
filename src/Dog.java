@@ -18,8 +18,8 @@ public class Dog extends Animal{
     }
 
     @Override
-    public void sweem(int distance){
-        if (dogMaxSweemDistance < distance)
+    public void swim(int distance){
+        if (dogMaxSwimDistance < distance)
             System.out.println("Собака может проплыть не больше 10 метров");
         else if (distance < 0)
             System.out.println("Дистанция не может быть отрицательной");

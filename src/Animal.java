@@ -2,7 +2,7 @@ public abstract class Animal {
     public String name;
     public int catMaxRunDistance = 200;
     public int dogMaxRunDistance = 500;
-    public int dogMaxSweemDistance = 10;
+    public int dogMaxSwimDistance = 10;
 
     Animal(String name) {
         this.name = name;
@@ -14,6 +14,6 @@ public abstract class Animal {
 
     abstract void run(int distance);
 
-    abstract void sweem(int distance);
+    abstract void swim(int distance);
 
 }
